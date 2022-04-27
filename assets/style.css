@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
 .jumbotron {
    background-size: cover;
    padding-top: 20%;
@@ -9,6 +13,9 @@
    align-items: center;
     
 }
+
+
+
 .jumbotron h1 {
     position: relative;
     font-weight: 600;
@@ -27,12 +34,15 @@
    border-radius: 5px;
    list-style: none; 
    padding: 10px 32px;
-
+   animation-name: jumboh1;
+   animation-duration: 4s;
+   animation-delay: 0s;
+   
    
 }
 nav li {
     font-weight: 700;
-    color: #fff
+    color: #fff;
 }
 
 .navbtn:hover{
@@ -41,20 +51,124 @@ nav li {
 }
 
 .skills-container {
+    /* display: flex; */
+    flex-wrap: wrap;
    margin-top:  -30px;
 background-color: #d19592;
 background-image: linear-gradient(315deg, #d19592 0%, #c81f70 74%);
+padding: 15%;  
+  width: 100%;
+  -webkit-clip-path: polygon(0% 0%, 400% 0%, 0% 100%, 0% 100%);
+  
 }
-.skills  {
-    margin-top: 2rem;
-    text-align: center;
+
+.skills-title {
+    margin-top: -9rem;
     font-weight: 700;
-}
-.skills h2{
     font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.skills-container h3 {
+   text-align: center;
+}
+
+.skills-container h4 {
+    text-align: center;
+}
+.skills img {
+  background-image: none;
+  height: 15rem;
+  width: 70rem;
+  margin-top: -30px;
+}
+.front-end-skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}  
+.front-end-skills li{
+    color: white;
+    font-size: 2rem;
+    width: 50%;
+    margin-top: 30px;
+    animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+}
+.portfolio h2 {
     font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
     text-transform: uppercase;
 }
+.portfolio-image {
+    object-fit: cover;
+    object-position: 50% 50%;
+    overflow: hidden;
+    width: 20rem;
+    height: 20rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
 
 
+@media screen and (max-width: 480px) {
+    .navbtn {
+        margin-top: 3%;
+        margin-left: 18%;
+        display: inline-block;
+        margin-bottom: 3%;
+        border: solid;
+        border-color: rgb(219, 78, 101);;
+        border-radius: 5px;
+        list-style: none; 
+        padding: 10px 32px;
+     }   
+     
+     .jumbotron h1 {
+         margin-left: 5%;
+         margin-right: 5%;
+        position: relative;
+        font-weight: 600;
+    }
+    .skills-container {
+        flex-wrap: wrap;
+       margin-top:  -90px;
+    background-color: #d19592;
+    background-image: linear-gradient(315deg, #d19592 0%, #c81f70 74%);
+    padding: 15%;  
+      width: 100%;
+      -webkit-clip-path: polygon(0% 0%, 400% 0%, 0% 100%, 0% 100%);
+    }
 
+    .skills-title {
+        margin-top: 2%;
+        font-weight: 700;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .skills-container h4 {
+        display: none;
+    }
+
+    .front-end-skills li{
+        color: white;
+        font-size: 15px;
+        width: 50%;
+        margin-top: 30px;
+        animation: fadeIn 5s;
+      -webkit-animation: fadeIn 5s;
+    }
+    .skills img {
+        height: 5rem;
+        width: 20rem;
+        margin-top: 12px;
+      }
+}

@@ -12,12 +12,11 @@
 <body>
     <!-- jumboTron and NavBar -->
     <div class="hero jumbotron jumbotron-fluid">
-        <h1 class="display-4">Hi, I'm <span id = 'name'>Xavier.</span></h1>
-        <h1 class="display-4">I'm a full Stack Developer.</h1>
+        <h1 class="header-text-name display-4"></h1>
         <nav class="nav nav-pills nav-fill">
            <ul>
                <li class = 'navbtn'>
-                   <a href="#">Skills</a>
+                <a href="#">Skills</a>
                </li>
                <li class = 'navbtn'>
                 <a href="#">Portfolio</a>
@@ -33,48 +32,46 @@
     </div>
     <!-- skills section -->
     <main>
-        <div class = 'skills-container container-fluid'>
-            <div class = 'row'>
-                <div class = 'skills col -4'> 
-                    <h2>Front-End</h2>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-
-                    </ul>
-                
-                </div>
         
-                <div class = 'skills col-4'> 
-                    <h2>Back-End</h2>
-                </div>
+        <div class = 'skills-container container-fluid'>
+            <h2 class = 'skills-title'>skills</h2>
+            <h3>
+              Programming is a skill best aquired by practice and example rather than from books.
+            </h3>
+            <h4> 
+              Hover over the building Blocks to see my current skills.
+            </h4>
+            <div class = 'skills-row row'>
+              <div class = 'skills col-6'>
+                <img src="./assets/Images/progressRemovedbg.png" class="figure-img img-fluid rounded" alt="findmycryptoscreenshot">
+              </div>
+         
             
-           
-                <div class = 'skills col-4'> 
-                    <h2>Front-End</h2></div>
+            <div class = 'front-end-skills col-5'> 
+              <h2 class = 'currentskill'></h2>
             </div>
+             
+        
 
         </div>
 
-
-
-
-
-
-
-
-
     </main>
 
+    <div class = 'portfolio container px-4'>
+      <h2>Portfolio</h2>
+        <div class = 'row gx-5'></div>
+          <div class = "col">
+            <figure class="portfolio-image figure p-3 border bg-light">
+               <img src="./assets/Images/findmycryptoscreenshot.png" class="figure-img img-fluid rounded" alt="findmycryptoscreenshot">
+              <figcaption class="figure-caption">A caption for the above image.</figcaption>
+            </figure>
+          </div>
+        </div>
+    </div>
 
 
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <scrip src='./assets/style.css'></scrip>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <script src='./assets/index.js'></script>
 </body>
 </html>
