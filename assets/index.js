@@ -3,7 +3,13 @@
 
 let headerName= document.querySelector('.header-text-name')
 let skillsimg = document.querySelector('.figure-img')
-
+let BackEndSkills = [
+    {
+        name: 'Front End and Back End',
+        skill: ['Javascript', 'HTML', 'CSS', 'jQuery', 'NodeJS', 'ExpressJs', 'MySQL', 'MongoDB']
+    }
+];
+let currentSkills = 0;
 
 console.log('hello world')
 
@@ -48,38 +54,44 @@ function getHeader () {
     }, speed);
 }
 
+
+
+
+
 function getSkills (e) {
     let skillsC = document.querySelector('.front-end-skills')
     let currentSkill = document.querySelector('.currentskill')
-    let BackEndSkills = [
-        {
-            name: 'Back End',
-            skill: ['NodeJS', 'ExpressJs', 'MySQL', 'MongoDB']
-        },
-        {
-            name: 'Front End',
-            skill: ['Javascript', 'HTML', 'CSS', 'jQuery']
-        },
-    ]
+    
     let SkillsUl = document.createElement('ul')
     skillsC.append(SkillsUl)
-    let currentSkills = 0;
+    
     let skillObj = BackEndSkills[currentSkills]
     let frontEndskillsli = document.createElement('li');
-    SkillsUl.appendChild(frontEndskillsli)
     let backEndskillli = document.createElement('li')
-    SkillsUl.appendChild(backEndskillli)
+    
 
   currentSkill.textContent = skillObj.name;
 
-    skillObj.skill.forEach(function(name){
-         let li = document.createElement('li')
-         li.textContent = name;
+    skillObj.skill.forEach(function(skill){
+         let li = document.createElement('li');
+         li.textContent = skill;
+         SkillsUl.appendChild(li)
+         
          li.addEventListener('mouseover', function (e) {
-             e.stopPropagation()
-             e.preventDefault()
-             compare();
+            e.stopPropagation()
+            e.preventDefault()
+            
+            ++currentSkill;
+            
+            
+
+             if(currentSkills === BackEndSkills.length) {
+
+                 skillsC.innerHTML = ''
+             }
          })
+
+          
     })
 
 
@@ -87,10 +99,9 @@ function getSkills (e) {
 }
 
 let skillrender = skillsimg.addEventListener('mouseover', function(e){
-    e.stopPropagation()
-    e.preventDefault()
-    getSkills();
-   
+  e.stopPropagation()
+  e.preventDefault()
+  getSkills(e)
 });
 
 

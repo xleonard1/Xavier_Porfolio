@@ -12,17 +12,29 @@
 <body>
     <!-- jumboTron and NavBar -->
     <div class="hero jumbotron jumbotron-fluid">
+      <!-- personal Pages Links -->
+      <ul class="personal-nav nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">LinkedIn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">GitHub</a>
+        </li>
+      </ul>
         <h1 class="header-text-name display-4"></h1>
+        
+        
         <nav class="nav nav-pills nav-fill">
+          
            <ul>
                <li class = 'navbtn'>
-                <a href="#">Skills</a>
+                <a href="#skills">Skills </a>
                </li>
                <li class = 'navbtn'>
-                <a href="#">Portfolio</a>
+                <a href="#portfolio">Portfolio</a>
             </li>
             <li class = 'navbtn'>
-                <a href="#">About</a>
+                <a href="#about">About</a>
             </li>
             <li class = 'navbtn'>
                 <a href="#">Contact</a>
@@ -32,8 +44,12 @@
     </div>
     <!-- skills section -->
     <main>
+
+      
         
-        <div class = 'skills-container container-fluid'>
+
+
+        <div class = 'skills-container container-fluid' id = 'skills'>
             <h2 class = 'skills-title'>skills</h2>
             <h3>
               Programming is a skill best aquired by practice and example rather than from books.
@@ -57,17 +73,74 @@
 
     </main>
 
-    <div class = 'portfolio container px-4'>
-      <h2>Portfolio</h2>
-        <div class = 'row gx-5'></div>
-          <div class = "col">
-            <figure class="portfolio-image figure p-3 border bg-light">
-               <img src="./assets/Images/findmycryptoscreenshot.png" class="figure-img img-fluid rounded" alt="findmycryptoscreenshot">
-              <figcaption class="figure-caption">A caption for the above image.</figcaption>
-            </figure>
+    <div class = 'portfolio container px-4' id = 'portfolio'>
+      <h2 class = 'portfolio-title'>Portfolio</h2>
+      <div class="portfolio-card card mb-3" style="max-width: 70%;">
+        
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./assets/Images/findmycryptoscreenshot.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Find My Crypto</h5>
+              <p class="card-text">This application displays cryptocurrency data and allows a user to put in a budget for a crypto purchase to see what they can acquire within their budget. It also allows the user to store their crypto portfolio within the application. This application runs in the browser and features dynamically updated HTML and CSS powered by Foundation, jQuery, the Coinbase API, the CoinGecko API, and the Newsdata.io API.</p>
+              <p>
+                <button type="button" class = 'btn btn-success'>
+                  <a href = 'https://xleonard1.github.io/Find-My-Crypto/' target = '_blank'>Source Code</a>
+                </button>
+              </p>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="portfolio-card card mb-3" style="max-width: 70%;">
+        
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./assets/Images/Screen Shot 2022-04-05 at 10.38.26 PM.png" class = 'img-fluid rounded-start' alt="workdaycalendar">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Work-Day Calenar</h5>
+              <p class="card-text">Work-Day Calendar allows users to keep track of the events going on in their day. On the calendar, users are able to track time, days, months, and store their events on local storage once entering save</p>
+              <p>
+                <button type="button" class = 'btn btn-success'>
+                  <a href = 'https://xleonard1.github.io/HW-5-Calendar-link/' target = "_blank">Source Code</a>
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </div>
+    <div class = 'about-container container-fluid' id = 'about'>
+      <h2 class = 'about-title'> About</h2>
+        <div class = 'about-row row'>
+              <div class = 'about col-6'>
+                <img src="./assets/Images/me.jpeg copy.jpg" class="figure-img img-fluid rounded" alt="xavier leonard in atlanta ga">
+              </div>
+
+              <div class = 'about col-5'>
+                <p>At the beginnning of my professional career, I jumped into teaching English Language Arts, Personal Training, and Entreprenuership through personal training. In the midst of my learning and developing, I began making websites and graphic images. </p>
+
+                <p>In 2022, I took a leap of faith and began learning software development at Georgia Tech. I quickly took in new concepts, met fast deadlines, and used my 'array' of skills that I garnered throughout my years of experience.</p>
+
+                <p>When I'm not coding, I am usually working out, hanging out with friends, or reading.</p>
+                <p>
+                <button type="button" class="resume btn btn-success">
+                  <a href="./assets/Xavier Leonard's  Code Resume.pdf" download="w3logo"> Resume 
+                  </a> 
+                </button>
+                </p>
+              </div>
+             
+            
+               
+            </div>
+          </div>
+      </div>
 
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
