@@ -3,6 +3,10 @@
 
 let headerName= document.querySelector('.header-text-name')
 let skillsimg = document.querySelector('.figure-img')
+let contactform = document.querySelector('.form-control')
+let contact = ''
+console.log(contactform)
+console.log(contactform.value)
 let BackEndSkills = [
     {
         name: 'Front End and Back End',
@@ -82,21 +86,26 @@ function getSkills (e) {
             e.preventDefault()
             
             ++currentSkill;
-            
-            
-
-             if(currentSkills === BackEndSkills.length) {
-
-                 skillsC.innerHTML = ''
-             }
          })
 
           
     })
-
-
     
 }
+
+function handleFormSubmit (){
+contactform.addEventListener('keydown', event => {
+    event.preventDefault()
+    if(event.keyCode ==13) {
+
+    }
+})
+
+}
+    
+
+
+
 
 let skillrender = skillsimg.addEventListener('mouseover', function(e){
   e.stopPropagation()
