@@ -3,10 +3,7 @@
 
 let headerName= document.querySelector('.header-text-name')
 let skillsimg = document.querySelector('.figure-img')
-let contactform = document.querySelector('.form-control')
-let contact = ''
-console.log(contactform)
-console.log(contactform.value)
+
 let BackEndSkills = [
     {
         name: 'Front End and Back End',
@@ -91,23 +88,49 @@ function getSkills (e) {
           
     })
     
+};
+
+let form = document.querySelector('#contact');
+const fullnameEl = document.querySelector('.name-input')
+const emailEl = document.querySelector('.email-input')
+const messageEl = document.querySelector ('.message-input')
+let modal = document.querySelector('.modal')
+let closeModal = document.querySelector('.close')
+
+console.log(modal)
+
+
+function handleFormSubmit () {
+  console.log(emailEl.value)
+  console.log(fullnameEl.value)
+  console.log(messageEl.value)
+  
+
 }
 
-function handleFormSubmit (){
-contactform.addEventListener('keydown', event => {
+form.addEventListener('submit', function (event){
     event.preventDefault()
-    if(event.keyCode ==13) {
+    handleFormSubmit()
+    modal.style.display = "block"
+    form.reset()
+    
+   
+})
 
+closeModal.addEventListener('click', function(event){
+    modal.style.display = 'none'
+    event.preventDefault()
+    
+})
+
+window.addEventListener('click', function(event){
+    
+    if(event.target == modal) {
+        modal.style.display = 'none'
     }
 })
 
-}
-    
-
-
-
-
-let skillrender = skillsimg.addEventListener('mouseover', function(e){
+skillsimg.addEventListener('mouseover', function(e){
   e.stopPropagation()
   e.preventDefault()
   getSkills(e)
@@ -115,5 +138,5 @@ let skillrender = skillsimg.addEventListener('mouseover', function(e){
 
 
 document.addEventListener('DOMContentLoaded', function(event) {
-    getHeader()
+    getHeader();
 })
