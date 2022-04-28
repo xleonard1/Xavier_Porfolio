@@ -6,4 +6,4 @@ This updated portfolio now includes dynamically generated javascript elements, u
 
 
 # GitHub Repo: https://github.com/xleonard1/Xavier_Porfolio.git
-# GitHub page:
+# Deploted Url: https://xleonard1.github.io/Xavier_Porfolio/
