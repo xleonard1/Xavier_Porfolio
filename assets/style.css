@@ -210,6 +210,21 @@ padding: 15%;
         position: relative;
         font-weight: 600;
     }
+    .portfolio h2 {
+        margin-top: 1rem;
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .portfolio-card {
+        margin-top: 1rem;
+        margin-bottom: 10rem;
+        padding: 0%;
+        width: 200%;
+    
+       
+    }
     .skills-container {
         flex-wrap: wrap;
        margin-top:  -90px;
@@ -217,9 +232,19 @@ padding: 15%;
     background-image: linear-gradient(315deg, #d19592 0%, #c81f70 74%);
     padding: 15%;  
       width: 100%;
-      -webkit-clip-path: polygon(0% 0%, 400% 0%, 0% 100%, 0% 100%);
+      clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 100%);
     }
-
+    .about-container {
+        padding: 0%;
+        background-color: #d19592;
+        background-image: linear-gradient(315deg, #d19592 0%, #c81f70 74%);
+        padding: 15%;  
+        width: 100%;
+        clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 100%);
+    }
+    .about {
+       min-width: 100%
+    }
     .skills-title {
         margin-top: 2%;
         font-weight: 700;
