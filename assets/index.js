@@ -1,8 +1,13 @@
 
-
-
 let headerName= document.querySelector('.header-text-name')
 let skillsimg = document.querySelector('.figure-img')
+let form = document.querySelector('#contact');
+const fullnameEl = document.querySelector('.name-input')
+const emailEl = document.querySelector('.email-input')
+const messageEl = document.querySelector ('.message-input')
+let modal = document.querySelector('.modal')
+let closeModal = document.querySelector('.close')
+
 
 let BackEndSkills = [
     {
@@ -12,7 +17,8 @@ let BackEndSkills = [
 ];
 let currentSkills = 0;
 
-console.log('hello world')
+
+// function to get the header action
 
 
 function getHeader () {
@@ -24,7 +30,7 @@ function getHeader () {
     let skipCount = 0
     let skipDelay = 15
     let speed = 70
-
+// set interval for letters to appear in header
     setInterval(function () {
         if(forwards) {
             if(offset >= name[i].length) {
@@ -57,7 +63,7 @@ function getHeader () {
 
 
 
-
+// dynamically generate list of skills when picture is hovered over
 
 function getSkills (e) {
     let skillsC = document.querySelector('.front-end-skills')
@@ -90,15 +96,7 @@ function getSkills (e) {
     
 };
 
-let form = document.querySelector('#contact');
-const fullnameEl = document.querySelector('.name-input')
-const emailEl = document.querySelector('.email-input')
-const messageEl = document.querySelector ('.message-input')
-let modal = document.querySelector('.modal')
-let closeModal = document.querySelector('.close')
-
-console.log(modal)
-
+// function to submit the form
 
 function handleFormSubmit () {
   console.log(emailEl.value)
@@ -108,6 +106,8 @@ function handleFormSubmit () {
 
 }
 
+
+// event listeners
 form.addEventListener('submit', function (event){
     event.preventDefault()
     handleFormSubmit()
@@ -116,13 +116,14 @@ form.addEventListener('submit', function (event){
     
    
 })
-
+// close modal when button is clicked on
 closeModal.addEventListener('click', function(event){
     modal.style.display = 'none'
     event.preventDefault()
     
 })
 
+// close modal when page is clicked on
 window.addEventListener('click', function(event){
     if(event.target == modal) {
         modal.style.display = 'none'
