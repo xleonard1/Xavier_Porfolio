@@ -41,6 +41,9 @@ html {
     width: 20rem;
     border-radius: 8px;
 }
+.about-p {
+    margin-top: 2rem;
+}
 .jumbotron {
     position: relative;
 }
@@ -139,6 +142,12 @@ padding: 15%;
   width: 70rem;
   margin-top: -30px;
 }
+.front-end-skills{
+    display: none;
+}
+.back-end-skills {
+    display: none
+}
 .front-end-skills ul {
     display: flex;
     flex-wrap: wrap;
@@ -162,7 +171,11 @@ padding: 15%;
     width: 50%;
     margin-top: 30px;
     animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
+   -webkit-animation: fadeIn 5s;
+}
+
+.front-end-skills{
+    display: none;
 }
 .portfolio h2 {
     font-weight: 700;
@@ -223,7 +236,7 @@ padding: 15%;
     }
     .navbtn {
         margin-top: 3%;
-        margin-left: 18%;
+        margin-left: 15%;
         display: inline-block;
         margin-bottom: 3%;
         border: solid;
@@ -251,8 +264,14 @@ padding: 15%;
         margin-bottom: 10rem;
         padding: 0%;
         width: 200%;
-    
-       
+    }
+
+    .front-end-skills {
+        display: block;
+    }
+
+    .back-end-skills {
+        display: block;
     }
     .skills-container {
         flex-wrap: wrap;
@@ -289,6 +308,14 @@ padding: 15%;
         display: flex;
         flex-direction: row;
         
+    }
+    .back-end-skills li{
+        color: white;
+        font-size: 10px;
+        width: 50%;
+        margin-top: 30px;
+        animation: fadeIn 5s;
+      -webkit-animation: fadeIn 5s;
     }
 
     .front-end-skills li{

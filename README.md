@@ -5,5 +5,7 @@ This updated portfolio now includes dynamically generated javascript elements, u
 ![ExampleShot](./assets/images/portfolio.png)
 
 
-# GitHub Repo: https://github.com/xleonard1/Xavier_Porfolio.git
-# Deploted Url: https://xleonard1.github.io/Xavier_Porfolio/
+# GitHub Repo: 
+https://github.com/xleonard1/Xavier_Porfolio.git
+# Deploted Url: 
+https://xleonard1.github.io/Xavier_Porfolio/

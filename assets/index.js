@@ -9,14 +9,6 @@ let modal = document.querySelector('.modal')
 let closeModal = document.querySelector('.close')
 
 
-let BackEndSkills = [
-    {
-        name: 'Front End and Back End',
-        skill: ['Javascript', 'HTML', 'CSS', 'jQuery', 'NodeJS', 'ExpressJs', 'MySQL', 'MongoDB']
-    }
-];
-let currentSkills = 0;
-
 
 // function to get the header action
 
@@ -68,31 +60,6 @@ function getHeader () {
 function getSkills (e) {
     let skillsC = document.querySelector('.front-end-skills')
     let currentSkill = document.querySelector('.currentskill')
-    
-    let SkillsUl = document.createElement('ul')
-    skillsC.append(SkillsUl)
-    
-    let skillObj = BackEndSkills[currentSkills]
-    let frontEndskillsli = document.createElement('li');
-    let backEndskillli = document.createElement('li')
-    
-
-  currentSkill.textContent = skillObj.name;
-
-    skillObj.skill.forEach(function(skill){
-         let li = document.createElement('li');
-         li.textContent = skill;
-         SkillsUl.appendChild(li)
-         
-         li.addEventListener('mouseover', function (e) {
-            e.stopPropagation()
-            e.preventDefault()
-            
-            ++currentSkill;
-         })
-
-          
-    })
     
 };
 
