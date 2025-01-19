@@ -2,6 +2,7 @@
 export const content = [
   "./src/**/*.{html,js,ts,jsx,tsx}", // Include all files in src folder
   "./index.html",
+  "./src/pages/*.{html}",
 ];
 export const theme = {
   container: {
@@ -62,10 +63,12 @@ export const theme = {
     height: {
       header: "400px",
       card: "260px",
+      button: "80px",
       1601: "601px",
     },
     width: {
       card: "260px",
+      button: "288px",
     },
     maxHeight: {
       header: "584",

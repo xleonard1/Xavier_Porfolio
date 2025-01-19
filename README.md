@@ -1,6 +1,6 @@
 # Xavier_Porfolio
 
-This updated portfolio now includes dynamically generated javascript elements, updated CSS, Tailwind and some old projects I have engaged in. 
+This updated portfolio now includes dynamically generated javascript elements, updated CSS, Tailwind and some old projects I have engaged in.
 
 ![ExampleShot](./assets/images/portfolio.png)
 

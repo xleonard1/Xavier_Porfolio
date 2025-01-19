@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact Me</title>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="fixed top-0 z-50 mb-5 h-24 w-full bg-secondary shadow">
+      <div
+        class="container mx-auto flex h-full items-center justify-between px-4"
+      >
+        <div class="text-2xl font-bold text-primary">
+          <a href="#">Xavier Leonard</a>
+        </div>
+        <div class="hidden sm:block">
+          <div class="flex space-x-4">
+            <a
+              href="../../index.html"
+              class="rounded-md px-3 py-2 text-sm font-medium text-primary hover:bg-accent hover:text-white"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="rounded-md px-3 py-2 text-sm font-medium text-primary hover:bg-accent hover:text-white"
+              >About</a
+            >
+            <a
+              href="#tech-stack"
+              class="rounded-md px-3 py-2 text-sm font-medium text-primary hover:bg-accent hover:text-white"
+              >TechStack</a
+            >
+            <a
+              href="#portfolio"
+              class="rounded-md px-3 py-2 text-sm font-medium text-primary hover:bg-accent hover:text-white"
+              >Projects</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container mx-auto px-4 pt-28 sm:px-6">
+      <div
+        class="grid h-header grid-cols-1 items-center gap-8 bg-[#bd7c33] sm:grid-cols-2"
+      >
+        <div class="px-4 text-center sm:px-20 sm:text-left">
+          <h1 class="text-header text-secondary sm:text-header">Contact Me</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="flex min-h-screen items-center justify-center px-4">
+      <div
+        class="flex w-full max-w-4xl flex-col bg-accent shadow-lg sm:flex-row"
+      >
+        <!-- Contact Image -->
+        <div class="flex-1">
+          <img
+            src="./../assets/Images/Talia + Xavier_33.jpg"
+            alt="Photo of Xavier"
+            class="h-full max-h-[580px] w-full object-cover"
+          />
+        </div>
+        <!-- Contact Form -->
+        <form class="flex flex-1 flex-col bg-white p-8 shadow-lg">
+          <h2 class="mb-4 text-xl font-bold text-gray-700">Contact Me</h2>
+          <div class="mb-4">
+            <label class="block text-sm font-bold text-gray-700" for="username">
+              Name
+            </label>
+            <input
+              class="w-full rounded border px-3 py-2 shadow focus:outline-none focus:ring-2 focus:ring-blue-500"
+              id="username"
+              type="text"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="mb-4">
+            <label class="block text-sm font-bold text-gray-700" for="email">
+              Email
+            </label>
+            <input
+              class="w-full rounded border px-3 py-2 shadow focus:outline-none focus:ring-2 focus:ring-blue-500"
+              id="email"
+              type="email"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="mb-6">
+            <label class="block text-sm font-bold text-gray-700" for="message">
+              Message
+            </label>
+            <textarea
+              class="w-full rounded border px-3 py-2 shadow focus:outline-none focus:ring-2 focus:ring-blue-500"
+              id="message"
+              placeholder="Your Message"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="flex justify-end">
+            <button
+              class="h-button w-button rounded bg-accent px-4 py-2 text-white"
+              type="submit"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="border-t border-gray-200 bg-white py-8">
+      <div class="container mx-auto text-center">
+        <!-- Social Media Links -->
+        <div class="mb-4 flex justify-center space-x-6">
+          <a
+            href="https://github.com/xleonard1"
+            target="_blank"
+            class="text-gray-500 transition hover:text-primary"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 .296a12 12 0 0 0-3.797 23.396c.6.111.82-.263.82-.585v-2.16c-3.338.727-4.043-1.608-4.043-1.608a3.184 3.184 0 0 0-1.334-1.753c-1.091-.746.083-.729.083-.729a2.525 2.525 0 0 1 1.84 1.237c1.074 1.83 2.815 1.303 3.504.995.108-.779.42-1.303.762-1.603-2.665-.3-5.466-1.332-5.466-5.93a4.648 4.648 0 0 1 1.237-3.21 4.337 4.337 0 0 1 .121-3.165s1.005-.321 3.3 1.221a11.45 11.45 0 0 1 6.003 0c2.295-1.542 3.3-1.221 3.3-1.221a4.336 4.336 0 0 1 .12 3.165 4.645 4.645 0 0 1 1.236 3.21c0 4.61-2.806 5.625-5.479 5.92.432.372.823 1.1.823 2.217v3.287c0 .323.216.699.827.58A12 12 0 0 0 12 .296"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://linkedin.com/in/xleonard1"
+            target="_blank"
+            class="text-gray-500 transition hover:text-primary"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 0H5C2.25 0 0 2.25 0 5v14c0 2.75 2.25 5 5 5h14c2.75 0 5-2.25 5-5V5c0-2.75-2.25-5-5-5zM7.5 20.5h-3V9h3v11.5zm-1.5-13c-1 0-1.5-.75-1.5-1.5S5 4.5 6 4.5 7.5 5.25 7.5 6 6.5 7.5 6 7.5zM20.5 20.5h-3v-5.5c0-1.5-.5-2.5-1.75-2.5-1 0-1.5.75-1.75 1.5-.25.5-.25 1-.25 1.5v5H11.5V9h3v1.5c.5-.75 1.25-1.5 2.5-1.5 1.75 0 3.5 1.25 3.5 4v7.5z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://twitter.com/xleonard1"
+            target="_blank"
+            class="text-gray-500 transition hover:text-primary"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23.954 4.569a9.935 9.935 0 0 1-2.825.775 4.92 4.92 0 0 0 2.163-2.723 9.884 9.884 0 0 1-3.127 1.2 4.908 4.908 0 0 0-8.384 4.475A13.933 13.933 0 0 1 1.64 3.162a4.822 4.822 0 0 0-.663 2.475c0 1.71.87 3.216 2.19 4.102A4.9 4.9 0 0 1 .96 9.097v.062a4.906 4.906 0 0 0 3.946 4.806 4.946 4.946 0 0 1-2.212.084 4.91 4.91 0 0 0 4.6 3.417 9.867 9.867 0 0 1-6.102 2.104c-.395 0-.786-.023-1.17-.067a13.945 13.945 0 0 0 7.557 2.212c9.056 0 14.002-7.497 14.002-13.986 0-.213-.006-.425-.015-.636a9.936 9.936 0 0 0 2.457-2.548"
+              />
+            </svg>
+          </a>
+        </div>
+        <!-- Footer Text -->
+        <p class="text-sm text-gray-600">
+          &copy; 2025 Xavier Leonard. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
