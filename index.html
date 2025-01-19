@@ -1,221 +1,230 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel = 'stylesheet' href="./assets/reset.css">
-    <link rel = 'stylesheet' href="./assets/style.css" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Xavier's Portfolio</title>
-</head>
-<body>
-    <!-- jumboTron and NavBar -->
-    <div class="hero jumbotron jumbotron-fluid">
-
-      <!-- personal Pages Links -->
-      <ul class="personal-nav nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="https://www.linkedin.com/in/xavier-leonard-791987120" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+  </head>
+  <body>
+    <nav class="mb-5 h-24 bg-secondary shadow">
+      <div
+        class="container mx-auto flex h-full items-center justify-between px-4"
+      >
+        <!-- Left Section: Branding or Logo -->
+        <div class="text-2xl font-bold text-primary">
+          <a href="#">Xavier Leonard</a>
+        </div>
+        <!-- Right Section: Navigation Links -->
+        <div class="hidden sm:block">
+          <div class="flex space-x-4">
+            <a
+              href="#"
+              class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+              aria-current="page"
+              >About
+            </a>
+            <a
+              href="#"
+              class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+              >TechStack
+            </a>
+            <a
+              href="#"
+              class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+              >Projects
+            </a>
+            <a
+              href="#"
+              class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+              >Blog
+            </a>
+          </div>
+        </div>
+        <!-- Mobile Menu Button (Optional) -->
+        <div class="sm:hidden">
+          <button class="text-gray-500 hover:text-gray-900 focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
             </svg>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/xleonard1/xleonard1.git" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-          </svg></a>
-        </li>
-      </ul>
-      <!-- jumbo Tron active Header -->
-        <h1 class="header-text-name display-4"></h1>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- jumboTron and NavBar -->
+    <div class="pt container mx-auto bg-secondary">
+      <div
+        class="grid h-header grid-cols-1 items-center gap-8 bg-accent sm:grid-cols-2"
+      >
+        <div class="px-20 text-center sm:text-left">
+          <h1
+            class="object-center text-header tracking-tight text-secondary sm:text-header"
+          >
+            Xavier Leonard
+          </h1>
+          <h1
+            class="object-center text-subheader tracking-tight text-secondary sm:text-subheader"
+          >
+            Full Stack Engineer
+          </h1>
+        </div>
         
-    <!-- page nav bar -->
-        <nav class="nav nav-pills nav-fill">
-          
-           <ul>
-               <li class = 'navbtn'>
-                <a href="#skills">Skills </a>
-               </li>
-               <li class = 'navbtn'>
-                <a href="#portfolio">Portfolio</a>
-            </li>
-            <li class = 'navbtn'>
-                <a href="#about">About</a>
-            </li>
-            <li class = 'navbtn'>
-                <a href="#contact">Contact</a>
-            </li>
-           </ul>
-        </nav>
+      </div>
+      <!-- tech stack section -->
+      <div class="container flex flex-col items-center justify-center py-36">
+        <!-- Section Heading -->
+        <div class="mx-auto text-center text-subheader">
+          <h2>
+            Building with the best tools - <br />
+            explore my tech stack
+          </h2>
+        </div>
+
+        <!-- category pills -->
+        <div class="mt-14 flex justify-center gap-12 space-x-4">
+          <button
+            class="category-btn border-primary-400 rounded-full border bg-secondary px-4 py-2 text-sm font-medium text-primary transition hover:bg-primary hover:text-white"
+            data-category="frontend"
+          >
+            Front-End
+          </button>
+          <button
+            class="category-btn border-primary-400 rounded-full border bg-secondary px-4 py-2 text-sm font-medium text-primary transition hover:bg-primary hover:text-white"
+            data-category="backend"
+          >
+            Back-End
+          </button>
+          <button
+            class="category-btn border-primary-400 rounded-full border bg-secondary px-4 py-2 text-sm font-medium text-primary transition hover:bg-primary hover:text-white"
+            data-category="data"
+          >
+            Data
+          </button>
+          <button
+            class="category-btn border-primary-400 rounded-full border bg-secondary px-4 py-2 text-sm font-medium text-primary transition hover:bg-primary hover:text-white"
+            data-category="other"
+          >
+            Other
+          </button>
+        </div>
+
+        <!-- Tech Stack Pills -->
+        <!-- frontend icons -->
+        <div class="mb-44 flex h-[300px] items-center justify-center gap-9">
+          <!-- Front-End Icons -->
+          <div class="category-row flex hidden gap-9" id="frontend">
+            <img
+              src="./src/assets/Images/ts-logo-512.svg"
+              class="h-52 w-52 object-contain"
+              alt="TypeScript Logo"
+            />
+            <img
+              src="./src/assets/Images/React Resources_idjTGHk5mN_1.svg"
+              class="h-52 w-52 object-contain"
+              alt="React Logo"
+            />
+            <img
+              src="./src/assets/Images/id0XVJaFEK_1737254362989.png"
+              class="h-52 w-52 object-contain"
+              alt="React Logo"
+            />
+          </div>
+
+          <!-- Back-End Icons -->
+          <div class="category-row flex hidden gap-9" id="backend">
+            <img
+              src="./src/assets/Images/Kotlin Full Color Logo Mark RGB.svg"
+              class="h-52 w-52 object-contain"
+              alt="Kotlin Logo"
+            />
+            <img
+              src="./src/assets/Images/JAVA_id2UW_Pq7t_1.svg"
+              class="h-52 w-52 object-contain"
+              alt="Java Logo"
+            />
+          </div>
+
+          <!-- Data Icons -->
+          <div class="category-row flex hidden gap-9" id="data">
+            <img
+              src="./src/assets/Images/Oracle MySQL_idtlXpo9bo_1.png"
+              class="h-52 w-52 object-contain"
+              alt="SQL Logo"
+            />
+            <img
+              src="./src/assets/Images/Snowflake_idj3qWXVFZ_1.png"
+              class="h-52 w-52 object-contain"
+              alt="Snowflake Logo"
+            />
+          </div>
+
+          <!-- Other Icons -->
+          <div class="category-row flex hidden gap-9" id="other">
+            <img
+              src="./src/assets/Images/idl6m9V26n_1737255379368.png"
+              class="h-52 w-52 object-contain"
+              alt="Mode Logo"
+            />
+            <img
+              src="./src/assets/Images/idKZ5YnyYf_logos.png"
+              class="h-52 w-52 object-contain"
+              alt="Protobuf Logo"
+            />
+          </div>
+        </div>
+        <div class="container flex-col bg-accent p-20 ">
+          <h2 class="text-subheader text-secondary pb-20">
+            "Learn the story behind the code—meet Xavier Leonard"<br/>
+			<span
+              class="text-xl"
+            >
+              Discover the journey, passion, and skills that drive my
+              work.
+			</span>
+          </h2>
+          <div class="flex h-[600px] content-center items-center gap-40 ">
+			<img
+            class="h-[580px] w-full object-fill"
+            src="./src/assets/Images/xavier_enhanced.png"
+            alt="profile image"
+			/>
+            <div>
+              <p class="text-left text-[25px] text-secondary">
+                My journey began as a teacher, where I noticed students coding
+                in class.<br />
+                Intrigued by their passion, I became curious about what they
+                were building, and that curiosity quickly grew into a career.
+                <br />
+                <br />
+                Over the past three years, I’ve worked as a Full-Stack Engineer,
+                Front-End Engineer, and Marketing Technology Engineer,
+                gaining hands-on experience across various domains.
+                Through these roles, I’ve honed my skills in Kotlin, <br />
+                SQL, Python, TypeScript, JavaScript, React, and modern CSS
+                frameworks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- skills section -->
-    <main>
-        <div class = 'skills-container container-fluid' id = 'skills'>
-            <h2 class = 'skills-title'>skills</h2>
-            <h3>
-              Programming is a skill best aquired by practice and example rather than from books.
-            </h3>
-            <h4> 
-              Hover over the building Blocks to see my current skills.
-            </h4>
-            <div class = 'skills-row row'>
-              <div class = 'skills col-6'>
-                <img src="./assets/Images/progressRemovedbg.png" class="figure-img img-fluid rounded" alt="findmycryptoscreenshot">
-              </div>
-         
-            <!-- dynamic elements presented -->
-            <div class = 'front-end-skills col-5'> 
-              <h2 class = 'Front'> Front End</h2>
-              <ul class = 'front-end'>
-                <li> Javascript </li>
-                <li> HTML </li>
-                <li> CSS </li>
-                <li> jQuery </li>
-              </ul>
-            </div>
-
-            <div class = 'back-end-skills col-5'> 
-              <h2 class = 'Back'> Back End </h2>
-              <ul class = 'back-end'>
-                <li> Javascript </li>
-                <li> HTML </li>
-                <li> CSS </li>
-                <li> jQuery </li>
-              </ul>
-            </div>
-        </div>
-    </main>
-
-    <!-- portfolio section -->
-    <div class = 'portfolio container px-4' id = 'portfolio'>
-      <h2 class = 'portfolio-title'>Portfolio</h2>
-      <div class="portfolio-card card mb-3" style="max-width: 700px;">
-        
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="./assets/Images/findmycryptoscreenshot.png" class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Find My Crypto</h5>
-              <p class="card-text">This application displays cryptocurrency data and allows a user to put in a budget for a crypto purchase to see what they can acquire within their budget. It also allows the user to store their crypto portfolio within the application. This application runs in the browser and features dynamically updated HTML and CSS powered by Foundation, jQuery, the Coinbase API, the CoinGecko API, and the Newsdata.io API.</p>
-              <p>
-                <button type="button" class = 'btn btn-success'>
-                  <a href = 'https://xleonard1.github.io/Find-My-Crypto/' target = '_blank'>Source Code</a>
-                </button>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-card card mb-3" style="max-width: 700px;">
-        
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="./assets/Images/game.png" class = 'img-fluid rounded-start' style="max-height: 400px"alt="workdaycalendar">
-          </div>
-          <div class="col-md-6">
-            <div class="card-body">
-              <h5 class="card-title">Ninja Go</h5>
-              <p class="card-text">Ninja Go is an online video game platform where user's can create their own user profile, see top scores, and play an online game called Ninja Go. </p>
-              <p>
-                <button type="button" class = 'btn btn-success'>
-                  <a href = 'https://nameless-journey-91177.herokuapp.com/' target = "_blank">Source Code</a>
-                </button>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-card card mb-3" style="max-width: 700px;">
-        
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="./assets/Images/demo.png" class = 'img-fluid rounded-start' alt="Tech Talk Blog">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Tech Talk</h5>
-              <p class="card-text">Tech talk is a blogging platform/ social media site. Users are able to create their own profiles, upload profile pictures, create and edit blog posts, and view and comment on other's blog posts. This web application utilizes express, cloudinary API, SQL and Sequelize, MVC, Bootstrap, and Vanilla JavaScript</p>
-              <p>
-                <button type="button" class = 'btn btn-success'>
-                  <a href = 'https://github.com/xleonard1/Tech-Blog-1.git' target = "_blank">Source Code</a>
-                </button>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-    
-    
-  </div>
-
-    <!-- about me sectioon -->
-    <div class = 'about-container container-fluid' id = 'about'>
-      <h2 class = 'about-title'> About</h2>
-        <div class = 'about-row row'>
-              <div class = 'about about-img col-6'>
-                <img src="./assets/Images/me.jpeg copy.jpg" class="figure-img img-fluid rounded" alt="xavier leonard in atlanta ga">
-              </div>
-
-              <div class = 'about about-p about-txt col-5'>
-                <p>At the beginnning of my professional career, I jumped into teaching English Language Arts, Personal Training, and Entreprenuership through personal training. In the midst of my learning and developing, I began making websites and graphic images. </p>
-
-                <p>In 2022, I took a leap of faith and began learning software development at Georgia Tech. I quickly took in new concepts, met fast deadlines, and used my 'array' of skills that I garnered throughout my years of experience.</p>
-
-                <p>When I'm not coding, I am usually working out, hanging out with friends, or reading.</p>
-                <p>
-                <button type="button" class="resume btn btn-success">
-                  <a href="./assets/Xavier Leonard's Resume-1.pdf" download="w3logo"> Resume 
-                  </a> 
-                </button>
-                </p>
-              </div>
-            </div>
-          </div>
-      </div>
-<!-- contact form -->
-
-<form action = 'mailto:xavier.lnrd@gmail.com' method="post" enctype="text/plain" class = 'container contact-container' id ='contact'>
-       <h2>Contact</h2>
-
-       <!-- name input -->
-       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Name</label>
-        <input type="name" class="name-input form-control" id="exampleFormControlInput1" id = 'name' placeholder="John Doe">
-      </div>
-
-      <!-- emailInput -->
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" class="email-input form-control" id="exampleFormControlInput1" id= 'email' placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">message</label>
-        <textarea class="message-input form-control" id="exampleFormControlTextarea1" id = 'message' rows="3"></textarea>
-      </div>
-      <button type="submit" class="resume btn btn-success">Submit</button>
-</form>
-
-<!-- Modal -->
-
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Congratulations! Your Email has been Submitted!</p>
-  </div>
-
-</div>
-
-
-    <script src='./assets/index.js'></script>
-</body>
+    <script src="./src/scripts/techStackCarousel.js"></script>
+  </body>
 </html>
