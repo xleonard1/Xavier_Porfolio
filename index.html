@@ -12,7 +12,7 @@
     <title>Xavier's Portfolio</title>
   </head>
   <body>
-    <nav class="mb-5 h-24 bg-secondary shadow">
+    <nav class="fixed top-0 z-50 mb-5 h-24 w-full bg-secondary shadow">
       <div
         class="container mx-auto flex h-full items-center justify-between px-4"
       >
@@ -69,59 +69,57 @@
     </nav>
 
     <!-- jumboTron and NavBar -->
-    <div class="pt container mx-auto mb-52 bg-secondary">
+    <div class="container mx-auto px-4 pt-28 sm:px-6">
       <div
         class="grid h-header grid-cols-1 items-center gap-8 bg-accent sm:grid-cols-2"
       >
-        <div class="px-20 text-center sm:text-left">
-          <h1
-            class="object-center text-header tracking-tight text-secondary sm:text-header"
-          >
+        <div class="px-4 text-center sm:px-20 sm:text-left">
+          <h1 class="text-header text-secondary sm:text-header">
             Xavier Leonard
           </h1>
-          <h1
-            class="object-center text-subheader tracking-tight text-secondary sm:text-subheader"
-          >
+
+          <h2 class="text-subheader text-secondary sm:text-subheader">
             Full Stack Engineer
-          </h1>
+          </h2>
+
+          
+            <button
+              href="./src/assets/Xavier_Leonard_Resume.pdf"
+              target="_blank"
+              class="font-medium text-secondary border border-secondary-400 p-5"
+            >
+              Get My Resume
+            </button>
+          
         </div>
       </div>
       <!-- tech stack section -->
-      <div
-        class="container flex flex-col items-center justify-center pb-24 pt-36"
-        id="tech-stack"
-      >
-        <!-- Section Heading -->
-        <div class="mx-auto text-center text-subheader">
-          <h2>
-            Building with the best tools - <br />
-            explore my tech stack
-          </h2>
-        </div>
-
+      <div class="container mx-auto px-4 py-12 sm:px-6" id="tech-stack">
+        <h2 class="mb-8 text-center text-subheader text-primary">
+          Building with the Best Tools
+        </h2>
         <!-- category pills -->
-        <div class="mt-14 flex justify-center gap-12 space-x-4">
+        <div class="flex flex-wrap justify-center gap-6">
           <button
-            class="category-btn border-primary-400 rounded-full border bg-secondary px-4 py-2 text-sm font-medium text-primary transition hover:bg-primary hover:text-white"
-            data-category="frontend"
+            class="category-btn border-primary-400 rounded-full border bg-secondary px-4 py-2 text-primary hover:bg-primary hover:text-white"
           >
             Front-End
           </button>
+
           <button
-            class="category-btn border-primary-400 rounded-full border bg-secondary px-4 py-2 text-sm font-medium text-primary transition hover:bg-primary hover:text-white"
-            data-category="backend"
+            class="category-btn border-primary-400 rounded-full border bg-secondary px-4 py-2 text-primary hover:bg-primary hover:text-white"
           >
             Back-End
           </button>
+
           <button
-            class="category-btn border-primary-400 rounded-full border bg-secondary px-4 py-2 text-sm font-medium text-primary transition hover:bg-primary hover:text-white"
-            data-category="data"
+            class="category-btn border-primary-400 rounded-full border bg-secondary px-4 py-2 text-primary hover:bg-primary hover:text-white"
           >
             Data
           </button>
+
           <button
-            class="category-btn border-primary-400 rounded-full border bg-secondary px-4 py-2 text-sm font-medium text-primary transition hover:bg-primary hover:text-white"
-            data-category="other"
+            class="category-btn border-primary-400 rounded-full border bg-secondary px-4 py-2 text-primary hover:bg-primary hover:text-white"
           >
             Other
           </button>
@@ -190,70 +188,73 @@
             />
           </div>
         </div>
-        <div class="container flex-col bg-accent p-20" id="about">
-          <h2 class="pb-20 text-subheader text-secondary">
-            "Learn the story behind the code—meet Xavier Leonard"<br />
-            <span class="text-xl">
-              Discover the journey, passion, and skills that drive my work.
-            </span>
-          </h2>
-          <div class="flex h-[600px] content-center items-center gap-40">
-            <img
-              class="h-[580px] w-full object-fill"
-              src="./src/assets/Images/xavier_enhanced.png"
-              alt="profile image"
-            />
-            <div class="flex-col">
-              <p class="text-left text-[25px] text-secondary">
-                My journey began as a teacher, where I noticed students coding
-                in class.<br />
-                Intrigued by their passion, I became curious about what they
-                were building, and that curiosity quickly grew into a career.
-                <br />
-                <br />
-                Over the past three years, I’ve worked as a Full-Stack Engineer,
-                Front-End Engineer, and Marketing Technology Engineer, gaining
-                hands-on experience across various domains. Through these roles,
-                I’ve honed my skills in Kotlin, <br />
-                SQL, Python, TypeScript, JavaScript, React, and modern CSS
-                frameworks.
-              </p>
-              <div
-                class="border-secondary-400 mt-12 flex h-20 w-72 content-center justify-center border bg-accent align-middle"
+      </div>
+      <!-- about -->
+      <div class="container flex-col bg-accent p-20" id="about">
+        <h2 class="pb-20 text-center text-subheader text-secondary">
+          "Learn the story behind the code—meet Xavier Leonard"<br />
+          <span class="text-xl">
+            Discover the journey, passion, and skills that drive my work.
+          </span>
+        </h2>
+        <div
+          class="flex h-auto flex-col content-center items-center gap-12 lg:h-[600px] lg:flex-row lg:gap-40"
+        >
+          <img
+            class="h-auto w-full rounded object-fill lg:h-[580px]"
+            src="./src/assets/Images/xavier_enhanced.png"
+            alt="profile image"
+          />
+          <div class="flex flex-col">
+            <p class="text-left text-[20px] text-secondary">
+              My journey began as a teacher, where I noticed students coding in
+              class.<br />
+              Intrigued by their passion, I became curious about what they were
+              building, and that curiosity quickly grew into a career.
+              <br />
+              <br />
+              Over the past three years, I’ve worked as a Full-Stack Engineer,
+              Front-End Engineer, and Marketing Technology Engineer, gaining
+              hands-on experience across various domains. Through these roles,
+              I’ve honed my skills in Kotlin, <br />
+              SQL, Python, TypeScript, JavaScript, React, and modern CSS
+              frameworks.
+            </p>
+            <div
+              class="border-secondary-400 mt-12 flex h-20 w-72 content-center justify-center border bg-accent align-middle"
+            >
+              <button
+                href="./src/assets/Xavier_Leonard_Resume.pdf"
+                target="_blank"
+                class="font-medium text-secondary"
               >
-                <button
-                  href="./src/assets/Xavier_Leonard_Resume.pdf"
-                  target="_blank"
-                  class="font-medium text-secondary"
-                >
-                  Get My Resume
-                </button>
-              </div>
+                Get My Resume
+              </button>
             </div>
           </div>
         </div>
       </div>
+
       <!-- old projects -->
 
-      <div class="portfolio container" id="portfolio">
-        <h2 class="mb-24 text-center text-subheader text-primary">Portfolio</h2>
+      <div class="portfolio container mx-auto py-24 px-4 sm:px-6" id="portfolio">
+        <h2 class="mb-8 text-center text-subheader text-primary pb-24">Portfolio</h2>
 
         <!-- Cards Row -->
-        <div class="flex flex-wrap justify-center gap-14">
+        <div class="flex flex-wrap justify-center gap-6">
           <!-- Find My Crypto -->
-          <div
-            class="portfolio-card w-80 overflow-hidden bg-secondary shadow-lg"
-          >
+          <div class="w-full rounded-lg bg-secondary shadow-lg sm:w-80">
             <img
               src="./src/assets/Images/findmycryptoscreenshot.png"
               class="h-48 w-full object-cover"
               alt="Find My Crypto Screenshot"
             />
+
             <div class="p-4">
-              <h5 class="mb-4 text-2xl font-semibold text-primary">
+              <h5 class="text-2xl font-semibold text-primary">
                 Find My Crypto
               </h5>
-              <p class="mb-4 min-h-[290px] text-gray-700">
+              <p class="mb-4 text-gray-700">
                 This application displays cryptocurrency data and allows a user
                 to put in a budget for a crypto purchase to see what they can
                 acquire within their budget. It also allows the user to store
@@ -282,8 +283,8 @@
               alt="Ninja Go Screenshot"
             />
             <div class="p-4">
-              <h5 class="mb-4 text-2xl font-semibold text-primary">Ninja Go</h5>
-              <p class="mb-4 min-h-[290px] text-gray-700">
+              <h5 class="text-2xl font-semibold text-primary">Ninja Go</h5>
+              <p class="mb-4 text-gray-700">
                 Ninja Go is an online video game platform where users can create
                 their own user profile, see top scores, and play an online game
                 called Ninja Go.
@@ -308,10 +309,8 @@
               alt="Tech Talk Screenshot"
             />
             <div class="p-4">
-              <h5 class="mb-4 text-2xl font-semibold text-primary">
-                Tech Talk
-              </h5>
-              <p class="mb-4 min-h-[290px] text-gray-700">
+              <h5 class="text-2xl font-semibold text-primary">Tech Talk</h5>
+              <p class="mb-4 text-gray-700">
                 Tech Talk is a blogging platform and social media site. Users
                 can create profiles, upload profile pictures, create and edit
                 blog posts, and view and comment on others' blog posts. This web
